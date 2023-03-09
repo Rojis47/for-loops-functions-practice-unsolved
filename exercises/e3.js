@@ -5,7 +5,13 @@
 
 export function getAverage(array) {
   // Your code goes here...
-
+  var totalSum = 0
+  var counter = 0
+  for (let n of array) {
+    totalSum += n
+    counter++
+  }
+  return totalSum / counter
 }
 
 
