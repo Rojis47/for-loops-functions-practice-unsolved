@@ -13,7 +13,7 @@ export function getClientWithGreatestBalance(array) {
     const account = array[p];
     if (account.balance > minBalance) {
       minBalance = account.balance
-      accountNumber = p // store the lowest number in a variable
+      accountNumber = p // store the highest number in a variable
     }
   } 
   lowestAccountArray.push(array[accountNumber])
