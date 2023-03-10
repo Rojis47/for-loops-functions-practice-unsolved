@@ -6,7 +6,18 @@
 
 export function getClientWithGreatestBalance(array) {
   // Your code goes here...
-
+  var lowestAccountArray = []
+  var accountNumber = 0
+  var minBalance = array[0].balance
+  for (let p = 0; p < array.length; p++) {
+    const account = array[p];
+    if (account.balance > minBalance) {
+      minBalance = account.balance
+      accountNumber = p // store the lowest number in a variable
+    }
+  } 
+  lowestAccountArray.push(array[accountNumber])
+  return lowestAccountArray
 }
 
 
