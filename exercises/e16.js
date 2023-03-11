@@ -7,7 +7,14 @@
 
 export function flatArrays(array) {
   // Your code goes here...
-
+  var resArr = []
+  for (let elem of array) {
+    if ( typeof(elem) === "object") {
+      for (let l of elem) {
+        resArr.push(l)
+      }
+    } else resArr.push(elem)
+  } return resArr
 }
 
 
