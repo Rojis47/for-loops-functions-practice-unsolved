@@ -7,8 +7,12 @@
 
 export function doesArrayInclude(array, value) {
   // Your code goes here...
-
-}
+  for (let letter of array) {
+    if (value == letter) {
+      return true
+    }
+  } return false
+} 
 
 
 
