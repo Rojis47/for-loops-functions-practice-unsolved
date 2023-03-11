@@ -7,6 +7,9 @@
 
 export function separateNamesWithAFromRest(array) {
   // Your code goes here...
+  var namesWith = []
+  var namesWithout = []
+  var resArr = []
 
 }
 

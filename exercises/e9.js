@@ -1,4 +1,3 @@
-
 // EXERCISE 9
 // Return an array of bank accounts with balance over $100
 // Array example: bankAccounts in /data/data.js
@@ -6,15 +5,14 @@
 
 export function getClientsWithBalanceOverOneHundred(array) {
   // Your code goes here...
-  var over100Array = []
+  var over100Array = [];
   for (let account of array) {
     if (account.balance > 100) {
-      over100Array.push(account)
+      over100Array.push(account);
     }
-  } return over100Array
+  }
+  return over100Array;
 }
-
-
 
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-9"
