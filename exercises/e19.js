@@ -6,7 +6,7 @@
 export function reverseArray(array) {
   // Your code goes here...
   var resArr = [];
-  for (let index = 0; index < array.length; index--) {
+  for (let index = array.length - 1; index >= 0; index--) {
     const element = array[index];
     resArr.push(element);
   }
